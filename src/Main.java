@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         tasc1();
+        tasc2();
     }
 
         public static void tasc1() {
@@ -19,6 +20,18 @@ public class Main {
             System.out.println("Значение переменной с типом данных 'long' " + athlete + " равно!");
             System.out.println("Значение переменной с типом данных 'float' " + cofe + " равно!");
             System.out.println("Значение переменной с типом данных 'double' " + milk + " равно!");
+        }
+
+        public static void tasc2() {
+        System.out.println("Задача 2");
+           float milk= 27.12F;
+           long human = 987678965549L;
+           double water= 2.786;
+           short ship = 569;
+           short coffiPocet= -159;
+           int animalsinTheForest= 27897;
+           byte waterBox = 67;
+
         }
 
     }
