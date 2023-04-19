@@ -4,6 +4,7 @@ public class Main {
         tasc1();
         tasc2();
         tasc3();
+        tasc4();
     }
 
         public static void tasc1() {
@@ -41,10 +42,25 @@ public class Main {
             byte Teacher2 = 27;
             byte Teacher3 = 30;
             short sheetsPaper = 480;
-            long student = Teacher1 + Teacher2 + Teacher3;
+            int student = Teacher1 + Teacher2 + Teacher3;
             long sheetsStudent = sheetsPaper / student;
             System.out.println("На каждого ученика рассчитано " + sheetsStudent + " листов!");
 
+        }
+
+        public static void tasc4() {
+        System.out.println("Задача 4");
+        byte timeWork = 2;
+        byte bottle = 16;
+        byte performanceTime = 20;
+        int performance1 = bottle / timeWork * performanceTime;
+        System.out.println("За 20 мин машина произвела " + performance1 + " штук бутылок.");
+        int performance2 = performance1 * 3 * 24;
+        System.out.println("За сутки машина произвела " + performance2 + " штук бутылок.");
+        int performance3 = performance2 * 3;
+        System.out.println("За 3 дня машина произвела " + performance3 + " штук бутылок.");
+        int performance4 = performance2 * 30;
+        System.out.println("За 1 месяц машина произвела " + performance4 + " штук бутылок.");
         }
 
     }
