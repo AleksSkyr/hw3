@@ -42,11 +42,11 @@ public class Main {
 
         public static void tasc3() {
             System.out.println("Задача 3");
-            byte Teacher1 = 23;
-            byte Teacher2 = 27;
-            byte Teacher3 = 30;
+            byte classTeacher1 = 23;
+            byte classTeacher2 = 27;
+            byte classTeacher3 = 30;
             short sheetsPaper = 480;
-            int student = Teacher1 + Teacher2 + Teacher3;
+            int student = classTeacher1 + classTeacher2 + classTeacher3;
             long sheetsStudent = sheetsPaper / student;
             System.out.println("На каждого ученика рассчитано " + sheetsStudent + " листов!");
 
@@ -71,8 +71,7 @@ public class Main {
         byte dyeJarTotal = 120;
         int whiteJarClass = 2;
         int brownJarClass = 4;
-        int dyeJarClass = whiteJarClass + brownJarClass;
-        int quantityClass = dyeJarTotal / dyeJarClass;
+        int quantityClass = dyeJarTotal / (whiteJarClass + brownJarClass);
         int whiteJarTotal = whiteJarClass * quantityClass;
         int brownJarTotal = brownJarClass * quantityClass;
         System.out.println("В школе, где " + quantityClass + " классов, нужно " + whiteJarTotal + " банок белой краски и " + brownJarTotal + " банок коричневой краски.");
@@ -80,7 +79,7 @@ public class Main {
         public static void tasc6() {
         System.out.println("Задача 6");
         byte bannana = 5;
-        int milk = 200;
+        int milk = 2;
         byte iceCream = 2;
         byte rawEggs = 4;
         byte oneBanana = 80;
@@ -88,11 +87,7 @@ public class Main {
         byte oneIceCream = 100;
         byte oneEggs = 70;
         double oneGram = 0.001;
-        int portionBannana = oneBanana * bannana;
-        int portionMilk = oneMilk * 2;
-        int portionIceCream = oneIceCream * iceCream;
-        int portionRawEgge = oneEggs * rawEggs;
-        int portionWeightGram = portionBannana + portionMilk + portionIceCream + portionRawEgge;
+        int portionWeightGram = bannana * oneBanana + milk * oneMilk + oneIceCream * iceCream + oneEggs * rawEggs;
         double portionWeightKg = portionWeightGram * oneGram;
         System.out.println("Вес спортзавтрака равна " + portionWeightGram + "грам или " + portionWeightKg + "кг!");
 
@@ -107,7 +102,9 @@ public class Main {
         int gramWeightAthlete = needResetWeight * oneKilogram;
         int needAthleteDey1 = gramWeightAthlete / deyResetWeight1;
         int needAthleteDey2 = gramWeightAthlete / deyResetWeight2;
-        System.out.println("Если спортсмен будет терять по 250 грам, ему понадобиться " + needAthleteDey1 + " дней, при потери в 500 грам в день ему понадобиться " + needAthleteDey2 + " дней." );
+        System.out.println("Если спортсмен будет терять по 250 грам, ему понадобиться " + needAthleteDey1 + " дней " );
+        System.out.println("Если спортсмен будет терять по 500 грам, ему понадобиться " + needAthleteDey2 + " дней.");
+
         }
         public static void tasc8() {
         System.out.println("Задача 8");
