@@ -7,6 +7,8 @@ public class Main {
         tasc4();
         tasc5();
         tasc6();
+        tasc7();
+        tasc8();
     }
 
         public static void tasc1() {
@@ -94,7 +96,44 @@ public class Main {
         double portionWeightKg = portionWeightGram * oneGram;
         System.out.println("Вес спортзавтрака равна " + portionWeightGram + "грам или " + portionWeightKg + "кг!");
 
+        }
 
+        public static void tasc7() {
+        System.out.println("Задача 7");
+        byte needResetWeight = 7;
+        short deyResetWeight1 = 250;
+        short deyResetWeight2 = 500;
+        short oneKilogram = 1000;
+        int gramWeightAthlete = needResetWeight * oneKilogram;
+        int needAthleteDey1 = gramWeightAthlete / deyResetWeight1;
+        int needAthleteDey2 = gramWeightAthlete / deyResetWeight2;
+        System.out.println("Если спортсмен будет терять по 250 грам, ему понадобиться " + needAthleteDey1 + " дней, при потери в 500 грам в день ему понадобиться " + needAthleteDey2 + " дней." );
+        }
+        public static void tasc8() {
+        System.out.println("Задача 8");
+        int employee1 = 67760;
+        int employee2 = 83690;
+        int employee3 = 76230;
+        byte oneYear = 12;
+        float teenProcent = 0.1F;
+        int yearSalaryEmployee1 = employee1 * oneYear;
+        int yearSalaryEmployee2 = employee2 * oneYear;
+        int yearSalaryEmployee3 = employee3 * oneYear;
+        float teenProcentEmployee1 = employee1 * teenProcent;
+        float teenProcentEmployee2 = employee2 * teenProcent;
+        float teenProcentEmployee3 = employee3 * teenProcent;
+        float enlargedSalaryEmployee1 = employee1 + teenProcentEmployee1;
+        float enlargedSalaryEmployee2 = employee2 + teenProcentEmployee2;
+        float enlargedSalaryEmployee3 = employee3 + teenProcentEmployee3;
+        float enlargedYearSalaryEmployee1 = enlargedSalaryEmployee1 * oneYear;
+        float enlargedYearSalaryEmployee2 = enlargedSalaryEmployee2 * oneYear;
+        float enlargedYearSalaryEmployee3 = enlargedSalaryEmployee3 * oneYear;
+        float differenceYearSalaryEmployee1 = enlargedYearSalaryEmployee1 - yearSalaryEmployee1;
+        System.out.println("Маша теперь получает " + enlargedSalaryEmployee1 + " рублей. Годовой доход вырос на " + differenceYearSalaryEmployee1 + " рублей.");
+        float differenceYearSalaryEmployee2 = enlargedYearSalaryEmployee2 - yearSalaryEmployee2;
+        System.out.println("Денис теперь получает " + enlargedSalaryEmployee2 + " рублей. Годовой доход вырос на " + differenceYearSalaryEmployee2 + " рублей.");
+        float differenceYearSalaryEmployee3 = enlargedYearSalaryEmployee3 - yearSalaryEmployee3;
+        System.out.println("Крестина теперь получает " + enlargedSalaryEmployee3 + " рублей. Годовой доход вырос на " + differenceYearSalaryEmployee3 + " рублей.");
         }
 
 
