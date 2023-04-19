@@ -5,6 +5,8 @@ public class Main {
         tasc2();
         tasc3();
         tasc4();
+        tasc5();
+        tasc6();
     }
 
         public static void tasc1() {
@@ -62,5 +64,38 @@ public class Main {
         int performance4 = performance2 * 30;
         System.out.println("За 1 месяц машина произвела " + performance4 + " штук бутылок.");
         }
+        public static void tasc5() {
+        System.out.println("Задача 5");
+        byte dyeJarTotal = 120;
+        int whiteJarClass = 2;
+        int brownJarClass = 4;
+        int dyeJarClass = whiteJarClass + brownJarClass;
+        int quantityClass = dyeJarTotal / dyeJarClass;
+        int whiteJarTotal = whiteJarClass * quantityClass;
+        int brownJarTotal = brownJarClass * quantityClass;
+        System.out.println("В школе, где " + quantityClass + " классов, нужно " + whiteJarTotal + " банок белой краски и " + brownJarTotal + " банок коричневой краски.");
+        }
+        public static void tasc6() {
+        System.out.println("Задача 6");
+        byte bannana = 5;
+        int milk = 200;
+        byte iceCream = 2;
+        byte rawEggs = 4;
+        byte oneBanana = 80;
+        byte oneMilk = 105;
+        byte oneIceCream = 100;
+        byte oneEggs = 70;
+        double oneGram = 0.001;
+        int portionBannana = oneBanana * bannana;
+        int portionMilk = oneMilk * 2;
+        int portionIceCream = oneIceCream * iceCream;
+        int portionRawEgge = oneEggs * rawEggs;
+        int portionWeightGram = portionBannana + portionMilk + portionIceCream + portionRawEgge;
+        double portionWeightKg = portionWeightGram * oneGram;
+        System.out.println("Вес спортзавтрака равна " + portionWeightGram + "грам или " + portionWeightKg + "кг!");
+
+
+        }
+
 
     }
