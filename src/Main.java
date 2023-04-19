@@ -3,6 +3,7 @@ public class Main {
 
         tasc1();
         tasc2();
+        tasc3();
     }
 
         public static void tasc1() {
@@ -31,6 +32,18 @@ public class Main {
            short coffiPocet= -159;
            int animalsinTheForest= 27897;
            byte waterBox = 67;
+
+        }
+
+        public static void tasc3() {
+            System.out.println("Задача 3");
+            byte Teacher1 = 23;
+            byte Teacher2 = 27;
+            byte Teacher3 = 30;
+            short sheetsPaper = 480;
+            long student = Teacher1 + Teacher2 + Teacher3;
+            long sheetsStudent = sheetsPaper / student;
+            System.out.println("На каждого ученика рассчитано " + sheetsStudent + " листов!");
 
         }
 
